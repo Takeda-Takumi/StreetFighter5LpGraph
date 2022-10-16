@@ -1,10 +1,8 @@
-import time
 import sys
 import fractions
 
-def func1(varA,varB):
-    '''return sum of a and b'''
-    varC = 42
+
+def func1(varA, varB):
     return (varA + varB)
 
 
