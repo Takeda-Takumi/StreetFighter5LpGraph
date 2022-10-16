@@ -15,7 +15,7 @@ jobs:
       - name: Checkout PyTorch
         uses: actions/checkout@master
       - name: Install flake8 and pytest
-        run: pip install flake8 pytest
+        run: pip install flake8 pytest pytest-cov
       - name: Run flake8
         uses: suo/flake8-github-action@releases/v1
         with:

@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.18, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+rootdir: /mnt/c/Users/Public/git/StreetFighter5LpGraph
+collected 8 items
+
+tests/test_calc.py ......FF                                              [100%]
+
+=================================== FAILURES ===================================
+_________________________________ test_shou_01 _________________________________
+
+    def test_shou_01():
+>       assert Calc(9, 2).shou() == 4.5
+E       assert 4 == 4.5
+E        +  where 4 = <bound method Calc.shou of <main.calc.Calc instance at 0x7f50b5e38fa0>>()
+E        +    where <bound method Calc.shou of <main.calc.Calc instance at 0x7f50b5e38fa0>> = <main.calc.Calc instance at 0x7f50b5e38fa0>.shou
+E        +      where <main.calc.Calc instance at 0x7f50b5e38fa0> = Calc(9, 2)
+
+tests/test_calc.py:29: AssertionError
+_________________________________ test_shou_02 _________________________________
+
+    def test_shou_02():
+>       assert Calc(-9, 2).shou() == -4.5
+E       assert -5 == -4.5
+E        +  where -5 = <bound method Calc.shou of <main.calc.Calc instance at 0x7f50b5ec8500>>()
+E        +    where <bound method Calc.shou of <main.calc.Calc instance at 0x7f50b5ec8500>> = <main.calc.Calc instance at 0x7f50b5ec8500>.shou
+E        +      where <main.calc.Calc instance at 0x7f50b5ec8500> = Calc(-9, 2)
+
+tests/test_calc.py:33: AssertionError
+- generated xml file: /mnt/c/Users/Public/git/StreetFighter5LpGraph/pytest.xml -
+====================== 2 failed, 6 passed in 0.27 seconds ======================
