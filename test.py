@@ -11,3 +11,4 @@ print(func1(fractions.Fraction(1, 2), fractions.Fraction(1, 3)))
 sys.exit(0)
 2 + 3
 5 + 2
+6 + 3
