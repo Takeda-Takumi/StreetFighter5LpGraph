@@ -31,3 +31,7 @@ def test_shou_01():
 
 def test_shou_02():
     assert Calc(-9, 2).shou() == -4.5
+
+def test_failre():
+    assert False
+
