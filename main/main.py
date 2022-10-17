@@ -10,3 +10,4 @@ else:
     exit(0)
 
 cookie = userdata_json["cookie"]
+fid = userdata_json["fightersid"]
