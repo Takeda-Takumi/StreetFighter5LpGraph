@@ -69,6 +69,6 @@ fuel_csrf_token = userdata_json["cookie"]["fuel_csrf_token"]
 next_scirid = next_userdata_json["cookie"]["scirid"]
 next_fuel_csrf_token = next_userdata_json["cookie"]["fuel_csrf_token"]
 
-if next_scirid != scirid and next_fuel_csrf_token != fuel_csrf_token:
+if next_scirid != scirid or next_fuel_csrf_token != fuel_csrf_token:
     with open(default_userdata_path, "w") as f:
         json.dump(next_userdata_json, f, indent=4)
