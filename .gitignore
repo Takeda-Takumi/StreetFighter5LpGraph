@@ -130,3 +130,5 @@ dmypy.json
 
 pytest-coverage.txt
 pytest.xml
+confidential/*
+!.gitkeep
