@@ -31,7 +31,7 @@ cursor.execute("""
     order by access_date
 ;""")
 
-#タプルを転置してリストにする
+# タプルを転置してリストにする
 data = [list(tup) for tup in zip(*cursor.fetchall())]
 
 fig, ax = plt.subplots()
