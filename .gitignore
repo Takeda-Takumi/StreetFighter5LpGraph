@@ -132,3 +132,5 @@ pytest-coverage.txt
 pytest.xml
 confidential/*
 !.gitkeep
+
+lpgraph/
